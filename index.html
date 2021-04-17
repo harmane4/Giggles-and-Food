@@ -498,8 +498,8 @@
                       </div> -->
                   
         <!-- Gallery -->
-  
-        <section  id="imageGallery" >
+      
+        <section  id="imageGallery" class="columns is-multiline">
           <div class="column is-one-quarter">
             <div class="container">
             <figure class="image is-3by2">
@@ -508,38 +508,11 @@
             <div class="container-content is-overlay">
               <a href="https://spicesgroup.com.au/300-acres/" target="_blank"><p class="has-text-black has-background-grey-light is-transparent has-text-centered">300 Acres Restaurant & Bar</p></a></span>
             </div>
-            <div class="dropdown is-active">
-              <div class="dropdown-trigger">
-                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                  <span>Leave a review</span>
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                <div class="dropdown-content">
-                    <div class="dropdown-item">
-                  <div class="field">
-                      <label class="label">Write your review</label>
-                    </div>
-                      <div class="control">
-                        <textarea class="textarea" placeholder="Textarea"></textarea>
-                      </div>
-                    </div>
-                  <hr class="dropdown-divider">
-                  <div class="dropdown-item">
-                  <button class="button is-success is-rounded">Submit</button>
-                  <hr class="dropdown-divider">
-                  <div class="dropdown-item">
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
+    
+          
           <div class="column is-one-quarter">
             <div class="container">
             <figure class="image is-3by2">
@@ -641,12 +614,160 @@
           </div>
         </div>
 
-
         </section> 
-   
+
+        <div class="field is-horiztonal">
+        <div class="field-label is-normal">
+
+        </div>
+        </div>
+
+         <!-- Reviews -->
+         <div class="field is-horizontal">
+          <div class="field-label is-normal">
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Name">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Restaurant</label>
+          </div>
+          <div class="field-body">
+            <div class="field is-narrow">
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option>300 Acres Restaurant & Bar</option>
+                    <option>Cambridge International Food Court</option>
+                    <option>The Carine</option>
+                    <option>The Crooked Carrot</option>
+                    <option>Golden Spur</option>
+                    <option>Masonmill Gardens</option>
+                    <option>Siena's Leederville</option>
+                    <option>Sticky Cafe</option>
+                    <option>The Quarter Acre</option>
+                    <option>Zamia Cafe</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Review</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" placeholder="Type your review here"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <!-- Left empty for spacing -->
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary">
+                  Add review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- This is what we want the review to look like. Code to be deleted -->
+       <article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Barbara Middleton</strong>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+        <br>
+        <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+      </p>
+    </div>
+
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Sean Brown</strong>
+            <br>
+            Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
+            <br>
+            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+          </p>
+        </div>
+
+        <article class="media">
+          Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
+        </article>
+
+        <article class="media">
+          Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+        </article>
+      </div>
+    </article>
+
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Kayli Eunice </strong>
+            <br>
+            Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+            <br>
+            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+</article>
+
 
  
+   
+
+       
+
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
      <script src="script.js"></script>
+     
                       
     </body>
     </html>
