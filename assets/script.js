@@ -9,7 +9,7 @@ burgerIcon.addEventListener('click', () => {
 //local storage
 const storeName = document.querySelector(".input");
 const storeReview = document.querySelector(".textarea");
-// const storeRestaurantName = document.querySelector(".workplease")
+const storeRestaurantName = document.querySelector(".workplease")
 const storedInformation = localStorage.getItem('Name');
 const storedInfoReview = localStorage.getItem('Review')
 const storedInfoRestaurant = localStorage.getItem('Restaurant')
@@ -35,25 +35,45 @@ storeName.addEventListener('input', information => {
 const saveToLocalStorage = () => {
   localStorage.setItem('Name', storeName.textContent);
   localStorage.setItem('Review', storeReview.textContent);
-  localStorage.setItem('Restaurant',storeRestaurantName.textContent);
+  localStorage.setItem('Restaurant',storeRestaurantName.value);
 }
 
 button.addEventListener('click', saveToLocalStorage)
+button.addEventListener('click', clearFields)
 
 storeReview.addEventListener('input', information => {
   console.log(information.target.value)
   storeReview.textContent = information.target.value
 })
 
+function clearFields () {
+  storeName.value = "";
+  storeReview.value = "";
 
-button.addEventListener('click', renderLocalStorageInfo)
+}
 
- 
-//  function renderLocalStorageInfo() {
-//   document.getElementById("nameChange").innerHTML = storedInformation;
-//  }
+clearFields () 
 
-//  renderLocalStorageInfo() 
+
+
+function thankYouMessage () {
+
+  //if (storeName.value === "") {
+    //console.log("Please enter name")
+  //} if (storeReview.value === "") {
+    //console.log("Please leave a review")
+  //} else {
+    if (storeReview) {
+    console.log("Thank you for your review")
+    storeReview.placeholder = "Thank you for your review";
+    }
+  }
+  
+button.addEventListener('click', thankYouMessage)
+
+
+
+
 
 
 
