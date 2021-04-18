@@ -1,9 +1,17 @@
-# Giggles-and-Food
-<<<<<<< HEAD
+# Sunshine Family 
 
-I enjoy JavaScript because it is a new programming language that I'm new to. I enjoy the successes I get when I complete assigned activites.  
-=======
-Test 
->>>>>>> b90d7dc1a3ac137d558577e095a80f41e5756193
+## Giggles and Food
 
-hello
+Giggles and Food is an application where parents/guardians/caretakers of young children can enable them to find restaurants with play equipment. Eating out with family in regular restaurants can be very challenging and stressful. Giggles and Food helps find that perfect restaurant for you, to suit your needs.
+
+### Technologies used:
+-	HTML
+-	BULMA
+-	CSS
+-	JAVA SCRIPT
+-	APIs
+
+
+#### This is a simple application. The user can look for the restaurants with play-ground equipment in the Perth area. Then look it up on our google maps. They can choose restaurants made by others or can make one themselves for others to re
+
+
