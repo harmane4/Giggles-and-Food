@@ -1,6 +1,6 @@
-#Sunshine Family 
+# Sunshine Family 
 
-##Giggles and Food
+## Giggles and Food
 
 Giggles and Food is an application where parents/guardians/caretakers of young children can enable them to find restaurants with play equipment. Eating out with family in regular restaurants can be very challenging and stressful. Giggles and Food helps find that perfect restaurant for you, to suit your needs.
 
