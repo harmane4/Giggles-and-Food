@@ -18,17 +18,8 @@ const reviews = document.querySelector(".reviews")
 const ul = document.querySelector("ul")
 var reviewContent; 
 
-// $("button").click(function(){
-//   $("ul").append("<li>testing</li>")
-// })
-
-// button.click(function(){
-//   var listElement = document.createElement("li")
-//   listElement.textContent = "test"
-//   ul.appendChild(listElement)
-// })
-
-
+document.getElementById("nameChange").innerHTML = storedInformation 
+document.getElementById("reviewContent").innerHTML = storedInfoReview
 
 
 if (storeName) {
@@ -46,11 +37,13 @@ storeName.addEventListener('input', information => {
 const saveToLocalStorage = () => {
   localStorage.setItem('Name', storeName.textContent);
   localStorage.setItem('Review', storeReview.textContent);
-  localStorage.setItem('Restaurant',storeRestaurantName.value);
+  localStorage.setItem('Restaurant', storeRestaurantName.value);
+
+  thankYouMessage()
 }
 
 button.addEventListener('click', saveToLocalStorage)
-button.addEventListener('click', clearFields)
+
 
 storeReview.addEventListener('input', information => {
   console.log(information.target.value)
@@ -77,16 +70,12 @@ function thankYouMessage () {
     if (storeReview) {
     console.log("Thank you for your review")
     storeReview.placeholder = "Thank you for your review";
-    document.getElementById("nameChange").innerHTML = storedInformation 
-  document.getElementById("reviewContent").innerHTML = storedInfoReview
+    document.getElementById("nameChange").innerHTML = localStorage.getItem('Name') 
+    document.getElementById("reviewContent").innerHTML = localStorage.getItem('Review')
     }
    
   }
   
-button.addEventListener('click', thankYouMessage)
-
-
-
 
 
 // Store Information
