@@ -71,19 +71,23 @@ function thankYouMessage () {
   
 button.addEventListener('click', thankYouMessage)
 
+document.getElementById("nameChange").innerHTML = storedInformation
+document.getElementById("reviewContent").innerHTML = storedInfoReview
 
 
 // Store Information
-localStorage.setItem('name', 'John Doe');
-localStorage.setItem('storeRestaurantName', 'restaurant');
+//localStorage.setItem('name', 'John Doe');
+//localStorage.setItem('storeRestaurantName', 'restaurant');
 
 //Acess information and store in variable
-var name =localStorage.getItem('name');
-var name =localStorage.getItem('restaurantName');
-var name =localStorage.getItem('review');
+//var name =localStorage.getItem('name');
+//var name =localStorage.getItem('restaurantName');
+//var name =localStorage.getItem('review');
 
 // Number of items stored
-var items = localStorage.length;
+//var items = localStorage.length;
+
+
 
 
 
