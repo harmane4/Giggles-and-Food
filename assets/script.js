@@ -9,7 +9,7 @@ burgerIcon.addEventListener('click', () => {
 //local storage
 const storeName = document.querySelector(".input");
 const storeReview = document.querySelector(".textarea");
-const storeRestaurantName = document.querySelector(".workplease")
+const storeRestaurantName = document.querySelector(".restaurantChoices")
 const storedInformation = localStorage.getItem('Name');
 const storedInfoReview = localStorage.getItem('Review')
 const storedInfoRestaurant = localStorage.getItem('Restaurant')
@@ -60,7 +60,7 @@ storeReview.addEventListener('input', information => {
 function clearFields () {
   storeName.value = "";
   storeReview.value = "";
-
+  
 }
 
 clearFields () 
@@ -77,14 +77,14 @@ function thankYouMessage () {
     if (storeReview) {
     console.log("Thank you for your review")
     storeReview.placeholder = "Thank you for your review";
-    }
     document.getElementById("nameChange").innerHTML = storedInformation 
-    document.getElementById("reviewContent").innerHTML = storedInfoReview
+  document.getElementById("reviewContent").innerHTML = storedInfoReview
+    }
+   
   }
   
 button.addEventListener('click', thankYouMessage)
 
-event.preventDefault()
 
 
 
