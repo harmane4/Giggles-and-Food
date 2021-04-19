@@ -49,6 +49,7 @@ function renderSearchHistoryResults() {
   }
 }
 
+// MAP API
 function initMap() {
   var myLatLng = { lat: -31.9523, lng: 115.8613 };
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -194,3 +195,5 @@ function initMap() {
     });
   
 }
+
+//2nd API
