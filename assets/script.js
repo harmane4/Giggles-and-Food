@@ -41,14 +41,12 @@ function getSearchHistoryFromLocalStorage() {
 }
 
 function renderSearchHistoryResults() {
-  reviewList.textContent = "";
-  storeReview.textContent = "";
+  reviewList.innerHTML = "Thank you for your review";
   for (let index = 0; index < listOfReviews.length; index++) {
     const review = listOfReviews[index];
     var listElement = document.createElement("li");
     listElement.textContent = review;
     reviewList.appendChild(listElement);
-    
   }
 }
 
@@ -199,9 +197,4 @@ function initMap() {
   
 }
 
-//2nd API
-// function getAPI() {
-//   var requestURL = "https://foodish-api.herokuapp.com/api/images/burger"
-
-//   https://foodish-api.herokuapp.com/images/dessert/dessert3.jpg
-// }
+//2nd API 
