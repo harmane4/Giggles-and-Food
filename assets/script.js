@@ -16,7 +16,7 @@ const storeRestaurantName = document.querySelector(".restaurantChoices")
 const button = document.querySelector(".button");
 const reviews = document.querySelector(".reviews")
 const reviewList = document.querySelector(".reviewList")
-const reviewInput = document.getElementById("reviewInput");
+const reviewInput = document.getElementById("reviewInputText");
 
 console.log(reviewInput)
 
