@@ -197,3 +197,6 @@ function initMap() {
 }
 
 //2nd API
+function getAPI() {
+  var requestURL = GET/api/images/burger
+}
