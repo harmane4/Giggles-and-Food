@@ -15,11 +15,15 @@ const storedInfoReview = localStorage.getItem('Review')
 const storedInfoRestaurant = localStorage.getItem('Restaurant')
 const button = document.querySelector(".button");
 const reviews = document.querySelector(".reviews")
-const ul = document.querySelector("ul")
-var reviewContent; 
+const ReviewList = document.querySelector(".reviewList")
+var listElement = document.createElement("li");
+
+
 
 document.getElementById("nameChange").innerHTML = storedInformation 
 document.getElementById("reviewContent").innerHTML = storedInfoReview
+listElement.textContent = localStorage.getItem('Review');
+
 
 
 if (storeName) {
@@ -40,6 +44,7 @@ const saveToLocalStorage = () => {
   localStorage.setItem('Restaurant', storeRestaurantName.value);
 
   thankYouMessage()
+  renderReviews()
 }
 
 button.addEventListener('click', saveToLocalStorage)
@@ -76,6 +81,13 @@ function thankYouMessage () {
    
   }
   
+  function renderReviews() {
+    for (let index = 0; index < ReviewList.length; index++) {
+      var listElement = document.createElement("li");
+      listElement.textContent = localStorage.getItem('Review');
+      ReviewList.appendChild(listElement);
+    }
+  }
 
 
 // Store Information
