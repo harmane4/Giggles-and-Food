@@ -39,6 +39,28 @@ storeName.addEventListener('input', information => {
   storeName.textContent = information.target.value
 })
 
+//suggestion
+const saveToLocalStorage = () => {
+  localStorage.setItem('Name', storeName.textContent);
+  // localStorage.setItem('Review', storeReview.textContent);
+  var savedReviews = JSON.parse( localStorage.getItem("Review") )
+  //for non-string data, we must parse data back into arrays when getItem.
+  //we'll assume that savedReviews is then an array of reviews.
+  if( savedReviews ){
+    //if something's already in localStorage.Review...
+    //1. push new review into savedReviews
+    //2. setItem into localStorage to replace the old data.
+  } else {
+    //nothing is saved, so we put the one review into an array and store THAT.
+    localStorage.setItem("Review", [storeReview.textContent])
+  }
+
+
+//end
+
+
+
+
 const saveToLocalStorage = () => {
   localStorage.setItem('Name', storeName.textContent);
   localStorage.setItem('Review', storeReview.textContent);
