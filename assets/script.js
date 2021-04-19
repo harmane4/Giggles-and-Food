@@ -15,8 +15,9 @@ const storedInfoReview = localStorage.getItem('Review')
 const storedInfoRestaurant = localStorage.getItem('Restaurant')
 const button = document.querySelector(".button");
 const reviews = document.querySelector(".reviews")
-const ReviewList = document.querySelector(".reviewList")
+const reviewList = document.querySelector(".reviewList")
 var listElement = document.createElement("li");
+var listOfReviews;
 
 
 
@@ -45,6 +46,7 @@ const saveToLocalStorage = () => {
 
   thankYouMessage()
   renderReviews()
+  clearFields () 
 }
 
 button.addEventListener('click', saveToLocalStorage)
@@ -58,11 +60,7 @@ storeReview.addEventListener('input', information => {
 function clearFields () {
   storeName.value = "";
   storeReview.value = "";
-  
 }
-
-clearFields () 
-
 
 
 function thankYouMessage () {
@@ -82,10 +80,10 @@ function thankYouMessage () {
   }
   
   function renderReviews() {
-    for (let index = 0; index < ReviewList.length; index++) {
+    for (let index = 0; index < 1; index++) {
       var listElement = document.createElement("li");
       listElement.textContent = localStorage.getItem('Review');
-      ReviewList.appendChild(listElement);
+      reviewList.appendChild(listElement);
     }
   }
 
