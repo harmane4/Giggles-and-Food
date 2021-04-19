@@ -9,7 +9,6 @@ burgerIcon.addEventListener('click', () => {
 //local storage
 const storeName = document.querySelector(".input");
 const storeReview = document.querySelector(".textarea");
-console.log(storeReview.textContent)
 const storeRestaurantName = document.querySelector(".restaurantChoices")
 // const storedInformation = localStorage.getItem('Name');
 // const storedInfoReview = localStorage.getItem('Review')
@@ -17,12 +16,15 @@ const storeRestaurantName = document.querySelector(".restaurantChoices")
 const button = document.querySelector(".button");
 const reviews = document.querySelector(".reviews")
 const reviewList = document.querySelector(".reviewList")
+const reviewInput = document.getElementById("reviewInput").value;
+
+console.log(reviewInput)
 var listElement = document.createElement("li");
 var listOfReviews;
 
 getSearchHistoryFromLocalStorage();
 renderSearchHistoryResults();
-button.addEventListener("click", saveSearchHistoryToLocalStorage(storeReview.textContent));
+button.addEventListener("click", saveSearchHistoryToLocalStorage(reviewInput.value));
 
 //LOCAL STORAGE FUNCTIONS
 
@@ -51,11 +53,9 @@ function renderSearchHistoryResults() {
   }
 }
 
-
 // document.getElementById("nameChange").innerHTML = storedInformation 
 // document.getElementById("reviewContent").innerHTML = storedInfoReview
 // listElement.textContent = localStorage.getItem('Review');
-
 
 
 // if (storeName) {
@@ -86,9 +86,7 @@ function renderSearchHistoryResults() {
 //     localStorage.setItem("Review", [storeReview.textContent])
 //   }
 
-
 // //end
-
 
 
 
@@ -104,7 +102,6 @@ function renderSearchHistoryResults() {
 
 // button.addEventListener('click', saveToLocalStorage)
 
-
 // storeReview.addEventListener('input', information => {
 //   console.log(information.target.value)
 //   storeReview.textContent = information.target.value
@@ -114,7 +111,6 @@ function renderSearchHistoryResults() {
 //   storeName.value = "";
 //   storeReview.value = "";
 // }
-
 
 // function thankYouMessage () {
 
@@ -140,7 +136,6 @@ function renderSearchHistoryResults() {
 //     }
 //   }
 
-
 // Store Information
 //localStorage.setItem('name', 'John Doe');
 //localStorage.setItem('storeRestaurantName', 'restaurant');
@@ -159,5 +154,6 @@ function renderSearchHistoryResults() {
 
 
 
-
  
+
+
