@@ -20,6 +20,7 @@ var listOfReviews;
 getSearchHistoryFromLocalStorage();
 renderSearchHistoryResults();
 
+
 button.addEventListener("click", function (event) {
   event.preventDefault();
   listOfReviews.push(reviewInput.value);
@@ -40,12 +41,14 @@ function getSearchHistoryFromLocalStorage() {
 }
 
 function renderSearchHistoryResults() {
-  reviewList.innerHTML = "";
+  reviewList.textContent = "";
+  storeReview.textContent = "";
   for (let index = 0; index < listOfReviews.length; index++) {
     const review = listOfReviews[index];
     var listElement = document.createElement("li");
     listElement.textContent = review;
     reviewList.appendChild(listElement);
+    
   }
 }
 
