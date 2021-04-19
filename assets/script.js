@@ -197,6 +197,8 @@ function initMap() {
 }
 
 //2nd API
-function getAPI() {
-  var requestURL = GET/api/images/burger
-}
+// function getAPI() {
+//   var requestURL = "https://foodish-api.herokuapp.com/api/images/burger"
+
+//   https://foodish-api.herokuapp.com/images/dessert/dessert3.jpg
+// }
