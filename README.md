@@ -40,11 +40,15 @@ The location map helps you locate the restaurant by displaying the address with 
 
 We are working on implementing a review feature, where users can submit and read reviews on the play equipment listed in Giggles and Food.
 
-##### Deployed Link
+#### Deployed Link
 https://harmane4.github.io/Giggles-and-Food/
 
 ##### GitHub repo
 https://github.com/harmane4/Giggles-and-Food
+
+##### Slides
+
+
 
 
 
