@@ -53,34 +53,28 @@ function renderSearchHistoryResults() {
   }
 }
 
-
 //2nd API
-
-function getApi() {
-  var requestUrl = "https://v2.jokeapi.dev/joke/Miscellaneous?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
-  console.log(requestUrl)
- fetch(requestUrl)
- .then(function (response) {
-   console.log(response)
-   return response.json();
-   
- })
- .then(function(data) {
-
-  function jokeButton() {
-    var joke = data.joke;
-    jokeInput.innerHTML = joke;
-    
-   }
-  
-   giggleBtn.addEventListener("click", jokeButton)
+function getApi() {var requestUrl = "https://v2.jokeapi.dev/joke/Miscellaneous?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
+console.log(requestUrl)
+fetch(requestUrl)
+.then(function (response) {
+ console.log(response)
+ return response.json();
 
 })
+.then(function(data) {
+ console.log(data)
+ console.log(data.joke)
+var joke = data.joke;
+jokeInput.innerHTML = joke;
+})
+}
+
+  
 
 
- 
- }
  getApi()
+
 
  
 
@@ -229,7 +223,4 @@ function initMap() {
     marker.addListener("click", () => {
       infowindow.open(map, marker);
     });
-  
 }
-
-
