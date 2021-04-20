@@ -7,7 +7,7 @@ burgerIcon.addEventListener("click", () => {
   navbarMenu.classList.toggle("is-active");
 });
 
-//local storage
+//SELECTORS
 const storeName = document.querySelector(".input");
 const storeReview = document.querySelector(".textarea");
 const storeRestaurantName = document.querySelector(".restaurantChoices");
@@ -20,9 +20,9 @@ var jokeInput = document.querySelector(".jokeInput");
 var listElement = document.createElement("li");
 var listOfReviews;
 
+//EVENT LISTENERS 
 getSearchHistoryFromLocalStorage();
 renderSearchHistoryResults();
-
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
@@ -32,7 +32,6 @@ button.addEventListener("click", function (event) {
 });
 
 //LOCAL STORAGE FUNCTIONS
-
 function getSearchHistoryFromLocalStorage() {
   var reviewSearchHistory = JSON.parse(localStorage.getItem("review"));
   if (!reviewSearchHistory) {
@@ -70,14 +69,7 @@ jokeInput.innerHTML = joke;
 })
 }
 
-  
-
-
  getApi()
-
-
- 
-
 
 // MAP API
 function initMap() {
@@ -88,7 +80,6 @@ function initMap() {
   });
 
   //Marker Locations 
-
   //Mason Mill
   var iconMason = new google.maps.InfoWindow({
     content: "<p>Masonmill Cafe, 40 Masonmill Rd, Carmel WA 6076</p>",
@@ -100,7 +91,6 @@ function initMap() {
   markerIconMason.addListener("click", () => {
     iconMason.open(map, markerIconMason);
   });
-
   //Zamia Cafe
   var iconZamia = new google.maps.InfoWindow({
     content: "<p>Zamia Cafe, 50 May Dr, West Perth WA 6005</p>",
@@ -124,8 +114,6 @@ function initMap() {
     markerIcon300Acres.addListener("click", () => {
       icon300Acres.open(map, markerIcon300Acres);
     });
-
-
       //Cambridge Food Court
       var iconCambridge = new google.maps.InfoWindow({
         content: "<p>Cambridge Food Court, 350 Cambridge St, Wembley WA 6014</p>",
@@ -138,8 +126,6 @@ function initMap() {
   markerIconCambridge.addListener("click", () => {
     iconCambridge.open(map, markerIconCambridge);
   });
-
-
      //Carine Glades
      var iconCarine = new google.maps.InfoWindow({
       content: "<p>Carine Glades Tavern, 493 Beach Rd, Duncraig WA 6023</p>",
@@ -152,7 +138,6 @@ function initMap() {
     markerIconCarine.addListener("click", () => {
       iconCarine.open(map, markerIconCarine);
     });
-
     //Crooked Carrot
     var iconCrookedCarrot = new google.maps.InfoWindow({
       content: "<p>Crooked Carrot, Forrest Hwy &, Rigg Rd, Myalup WA 6220</p>",
@@ -165,7 +150,6 @@ function initMap() {
     markerIconCrookedCarrot.addListener("click", () => {
       iconCrookedCarrot.open(map, markerIconCrookedCarrot);
     });
-
       //Golden Spur
       var iconGoldenSpur = new google.maps.InfoWindow({
         content: "<p>Golden Spur, 7 Mandurah Terrace, Mandurah WA 6210</p>",
@@ -178,8 +162,6 @@ function initMap() {
   markerIconGoldenSpur.addListener("click", () => {
     iconGoldenSpur.open(map, markerIconGoldenSpur);
   });
-
-
     //Siena's Leederville
     var iconSiena = new google.maps.InfoWindow({
       content: "<p>Siena's, 115 Oxford St, Leederville WA 6007</p>",
@@ -192,9 +174,6 @@ function initMap() {
     markerIconSiena.addListener("click", () => {
       iconSiena.open(map, markerIconSiena);
     });
-
-
-
       //Sticky Beaks
       var iconWindow = new google.maps.InfoWindow({
         content: '<p>Sticky Beaks, 37 Kings Park Rd, Kings Park WA 6005</p>',
@@ -207,10 +186,6 @@ function initMap() {
   markerIcon.addListener("click", () => {
     iconWindow.open(map, markerIcon);
   });
-
-
-
-
     //Quarter Acre
     var infowindow = new google.maps.InfoWindow({
       content: '<p>The Quarter Acre, 767 Canning Hwy, Applecross WA 6153</p>',
