@@ -15,6 +15,7 @@ const button = document.querySelector(".button");
 const reviews = document.querySelector(".reviews");
 const reviewList = document.querySelector(".reviewList");
 const reviewInput = document.getElementById("reviewInputText");
+var giggleBtn = document.getElementById("jokeBtn")
 var jokeInput = document.querySelector(".jokeInput");
 var listElement = document.createElement("li");
 var listOfReviews;
@@ -65,16 +66,24 @@ function getApi() {
    
  })
  .then(function(data) {
-   console.log(data)
-   console.log(data.joke)
-  var joke = data.joke;
-  jokeInput.innerHTML = joke;
 
+  function jokeButton() {
+    var joke = data.joke;
+    jokeInput.innerHTML = joke;
+    
+   }
   
- })
+   giggleBtn.addEventListener("click", jokeButton)
+
+})
+
+
  
  }
  getApi()
+
+ 
+
 
 // MAP API
 function initMap() {
