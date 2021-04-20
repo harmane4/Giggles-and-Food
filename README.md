@@ -1,8 +1,10 @@
 #  SUNSHINE FAMILY
-##  Giggles and Food
-###  Giggles and Food is an application where parents, guardians, and caretakers of young family, (children under 12) can search restaurant for playground with equipment in the Perth Area. It is aimed to make mealtime a lot more enjoyable.
 
-#### Technologies 
+##  Giggles and Food
+
+ Giggles and Food is an application where parents, guardians, and caretakers of young family, (children under 12) can search restaurant for playground with   equipment in the Perth Area. It is aimed to make mealtime a lot more enjoyable.
+
+### Technologies 
 
 -Git Hub
 -HTML
@@ -11,9 +13,7 @@
 -API’s
 
 
-
-
-###### Launch
+#### Launch
 
 The project has minimum hardware requirements and works on any device. 
 The link will take you to our web application. 
@@ -36,14 +36,15 @@ The location map helps you locate the restaurant by displaying the address with 
 <img width="1255" alt="location maps" src="https://user-images.githubusercontent.com/75565115/115400528-f6997180-a21b-11eb-8f96-0ceeaf1f46a5.png">
 
 
-###### Project Status
+##### Project Status
 
 We are working on implementing a review feature, where users can submit and read reviews on the play equipment listed in Giggles and Food.
 
-###### Deployed Link
-Deployed link: https://harmane4.github.io/Giggles-and-Food/
+##### Deployed Link
+https://harmane4.github.io/Giggles-and-Food/
 
-######
-GitHub repo: https://github.com/harmane4/Giggles-and-Food
+##### GitHub repo
+https://github.com/harmane4/Giggles-and-Food
+
 
 
