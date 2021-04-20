@@ -36,7 +36,7 @@ The location map helps you locate the restaurant by displaying the address with 
 <img width="1255" alt="location maps" src="https://user-images.githubusercontent.com/75565115/115400528-f6997180-a21b-11eb-8f96-0ceeaf1f46a5.png">
 
 
-##### Project Status
+#### Project Status
 
 We are working on implementing a review feature, where users can submit and read reviews on the play equipment listed in Giggles and Food.
 
