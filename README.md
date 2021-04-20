@@ -6,11 +6,11 @@
 
 ### Technologies 
 
--Git Hub
--HTML
--Bulma
--Java Script
--API’s
+- Git Hub
+- HTML
+- Bulma
+- Java Script
+- API’s
 
 
 #### Launch
