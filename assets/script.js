@@ -1,4 +1,5 @@
 //mobile menu
+
 const burgerIcon = document.querySelector("#burger");
 const navbarMenu = document.querySelector("#nav-links");
 
@@ -14,11 +15,14 @@ const button = document.querySelector(".button");
 const reviews = document.querySelector(".reviews");
 const reviewList = document.querySelector(".reviewList");
 const reviewInput = document.getElementById("reviewInputText");
+var giggleBtn = document.getElementById("jokeBtn")
+var jokeInput = document.querySelector(".jokeInput");
 var listElement = document.createElement("li");
 var listOfReviews;
 
 getSearchHistoryFromLocalStorage();
 renderSearchHistoryResults();
+
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
@@ -48,6 +52,32 @@ function renderSearchHistoryResults() {
     reviewList.appendChild(listElement);
   }
 }
+
+//2nd API
+function getApi() {var requestUrl = "https://v2.jokeapi.dev/joke/Miscellaneous?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
+console.log(requestUrl)
+fetch(requestUrl)
+.then(function (response) {
+ console.log(response)
+ return response.json();
+
+})
+.then(function(data) {
+ console.log(data)
+ console.log(data.joke)
+var joke = data.joke;
+jokeInput.innerHTML = joke;
+})
+}
+
+  
+
+
+ getApi()
+
+
+ 
+
 
 // MAP API
 function initMap() {
@@ -193,7 +223,4 @@ function initMap() {
     marker.addListener("click", () => {
       infowindow.open(map, marker);
     });
-  
 }
-
-//2nd API
