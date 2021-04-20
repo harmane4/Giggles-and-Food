@@ -41,7 +41,7 @@ function getSearchHistoryFromLocalStorage() {
 }
 
 function renderSearchHistoryResults() {
-  reviewList.innerHTML = "Thank you for your review";
+  reviewList.innerHTML = "";
   for (let index = 0; index < listOfReviews.length; index++) {
     const review = listOfReviews[index];
     var listElement = document.createElement("li");
