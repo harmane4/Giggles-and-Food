@@ -28,7 +28,8 @@ The link will take you to our web application.
 The website tells you who we are, what we do and how to contact us.
 <img width="1282" alt="Giggles and Food" src="https://user-images.githubusercontent.com/75565115/115400383-cd78e100-a21b-11eb-8799-8bd1bf17bbb6.png">
 
-While browsing through the restaurants, for your amusement, you will be able to amuse yourself with some of the “dad jokes”.<img width="1256" alt="dadjokes" src="assets/images/dadjoke.png"
+While browsing through the restaurants, for your amusement, you will be able to amuse yourself with some of the “dad jokes”
+<img width="1276" alt="dadjoke" src="https://user-images.githubusercontent.com/75565115/115409443-585dd980-a224-11eb-9fa3-b7f22bdd5615.png">
 
 
 
